@@ -7,6 +7,7 @@ if python -c 'import sys; sys.exit(1 * (sys.version_info[0] != 2))' ; then
 		# PyPy
 		pip install mercurial
 		pip install --allow-external bzr --allow-unverified bzr bzr
+		sudo apt-get install -qq python-svn
 	fi
 	if python -c 'import sys; sys.exit(1 * (sys.version_info[1] >= 7))' ; then
 		# Python 2.6
